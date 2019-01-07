@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+THIS IS THE INDEX PAGE
+
+<table>
+    <th>
+        <td>App name</td>
+    <td>Contact Street</td>
+    </th>
+    <tbody>
+    <tr th:each="firstelement:${first}">
+       <td></td>
+        <td><p th:text="${firstelement.primarycontactstreet}"></p></td>
+        <td>written</td>
+    </tr>
+    </tbody>
+
+</table>
+</body>
+</html>
